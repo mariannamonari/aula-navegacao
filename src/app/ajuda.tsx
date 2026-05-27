@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
 import { Link } from "expo-router";
 
-export default function Index() {
+export default function Ajuda() {
   return (
     <View
       style={{
@@ -10,14 +10,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Página principal</Text>
+      <Text>Página de Ajuda</Text>
+
+      <Link href="/">
+        <Text>Navegar até a Home</Text>
+      </Link>
 
       <Link href="/settings">
         <Text>Navegar até as Configurações</Text>
-      </Link>
-
-      <Link href="/ajuda">
-        <Text>Navegar até a Ajuda</Text>
       </Link>
     </View>
   );
