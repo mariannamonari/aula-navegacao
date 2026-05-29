@@ -1,16 +1,18 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Link } from "expo-router";
 
-export default function Index() {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  }
+});;
+
+export default function Home() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Página principal</Text>
+    <View style={styles.container}>
+      <Text>Página Home</Text>
 
       <Link href="/settings">
         <Text>Navegar até as Configurações</Text>
